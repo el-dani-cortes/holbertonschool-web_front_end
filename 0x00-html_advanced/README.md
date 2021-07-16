@@ -27,6 +27,6 @@ An introductory project on:
 -  Open your file in your browser (the page should be blank)
 
 **[1-index.html](./1-index.html)** - Structure your webpage:  
-Copy the content of 0-index.html into 1-index.html
+Copy the content of 0-index.html into 1-index.html  
 Create the head and body sections
 -  Inside the html tag, create the head and body tags (empty) in this order
