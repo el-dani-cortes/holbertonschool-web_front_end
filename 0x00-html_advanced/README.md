@@ -108,3 +108,4 @@ Copy the content of  `3-index.html`  into  `5-index.html`
         5.  create fifth section and put the text  `Latest news section`  inside
         6.  create sixth section and put the text  `Testimonials section`  inside
         7.  create seventh section and put the text  `Contact section`  inside
+
