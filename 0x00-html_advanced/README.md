@@ -72,7 +72,7 @@ Copy the content of `1-index.html` into `2-index.html`
         -   type:  `image/png`
         -   href:  `./favicon.png`
 
-**[1-index.html](./1-index.html)** - Simple header, main, footer:  
+**[3-index.html](./3-index.html)** - Simple header, main, footer:  
 Copy the content of  `2-index.html`  into  `3-index.html`
 **Header:**
 
