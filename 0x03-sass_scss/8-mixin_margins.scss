@@ -1,0 +1,13 @@
+/* Use of mixin in SASS */
+@mixin mg($mg: 10px) {
+  margin-left: $mg;
+  margin-right: $mg;
+}
+
+body {
+  @include mg;
+}
+
+div {
+  @include mg($mg: 15px);
+}

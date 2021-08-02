@@ -1,0 +1,18 @@
+/* Use extended in SASS */
+%font_size {
+  font-size: 12px;
+}
+
+.info {
+  @extend %font_size;
+}
+
+.success {
+  @extend %font_size;
+  color: #00ff00;
+}
+
+.warning {
+  @extend %font_size;
+  color: #ff0000;
+}
