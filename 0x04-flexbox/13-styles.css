@@ -766,7 +766,7 @@ ul.row {
 
 .tag-list {
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .tag-list li {
