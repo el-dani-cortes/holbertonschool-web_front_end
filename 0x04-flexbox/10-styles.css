@@ -518,7 +518,7 @@ ul.row {
 
 .section-hero .section-category {
   color: var(--color-white);
-  transform: uppercase;
+  text-transform: uppercase;
 }
 
 .hero-homepage {
