@@ -1,11 +1,3 @@
-/*
-btn-primary has as background color set to #E0003C and #BC1340 for hover/focus/active
-btn-outline-primary has text and border color set to #E0003C
-a link (no matter which color forced) has text color set to #E0003C normally, in hover and in focus
-Card (card container, but also header/footer) has border color set to #E0003C and radius to 1rem
-.text-muted has text color set to #8C8C8C
-*/
-
 .btn-primary {
   background-color: #e0003c !important;
   border-color: #bc1340 !important;
@@ -45,4 +37,8 @@ a:focus {
   color: white;
   border-top-right-radius: 1rem !important;
   border-top-left-radius: 1rem !important;
+}
+
+.text-muted {
+  color: #8c8c8c !important;
 }
