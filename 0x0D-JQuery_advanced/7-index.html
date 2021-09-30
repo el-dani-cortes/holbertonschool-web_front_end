@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Query - Setup your dev environment</title>
+  </head>
+  <body>
+    <script type="application/javascript">
+      function createSearchForm() {
+        $("body").append('<input type="text" />');
+        $("body").append('<input type="submit" />');
+        $("body").append("<ul></ul>");
+
+        $(":submit").click((_) => queryWikipedia($("input").first().val()));
+      }
+      function addNewArticle(id, title, snippet) {
+        const newArticle = `<li><p><span>${id} - </span><b>${title}</b></p><p>${snippet}</p></li>`;
+        $("ul").append(newArticle);
+      }
+      function queryWikipedia(search) {
+        // Remove old search results
+        $("li").remove();
+
+        // Set up ajax request
+        const data = $.ajax({
+          type: "GET",
+          url: `https://en.wikipedia.org/w/api.php?format=json&action=query&list=search&srsearch=${search}&origin=*`,
+          contentType: JSON,
+        });
+
+        // Analyse it and call addNewArticle on each item
+        data.done(function () {
+          console.log(data.responseJSON);
+          const results = data.responseJSON.query.search;
+
+          for (result of results) {
+            console.log(result);
+            addNewArticle(result.pageid, result.title, result.snippet);
+          }
+        });
+      }
+
+      createSearchForm();
+    </script>
+  </body>
+</html>
